@@ -24,7 +24,7 @@ contract HelloWorld {
 
     modifier onlyOwner()
     {
-        require (msg.sender == owner, "Only Owner Can Call This Contract");
+        require (msg.sender == owner, "Only Owner Can Call This Function");
         _;
     }
 }
